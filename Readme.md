@@ -1,8 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Moiseyenko Olga](https://up.htmlacademy.ru/htmlcss/13/user/208436).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Nikita Rogatnev]https://htmlacademy.ru/profile/id86119.
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
