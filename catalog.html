@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-navigator">
+          <ul>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="#">Гостиницы</a></li>
+          </ul>
+        </nav>
+        <div class="index-logo">
+            <a href="#"><img src="img/index-logo.png" width="368" height="204" alt="Седона"></a>
+        </div>
+      </div>
+    </header>
+    <main class="main-catalog">
+      <section class="search-options">
+        <div class="option-check">
+            <h2 class="opt-name">Инфраструктура</h2>
+            <input type="checkbox" name="infrastructure" value="" checked>Бассейн<br>
+            <input type="checkbox" name="infrastructure" value="">Парковка<br>
+            <input type="checkbox" name="infrastructure" value="">Wi-fi
+        </div>
+        <div class="opt-check">
+            <h2 class="opt-name">Тип жилья</h2>
+            <input type="checkbox" name="type-accomod" value="" checked>Гостиница<br>
+            <input type="checkbox" name="type-accomod" value="" checked>Мотель<br>
+            <input type="checkbox" name="type-accomod" value="" checked>Апартаменты
+        </div>
+        <div class="opt-price">
+            <p>Стоимость в сутки</p>
+            <label class="lb-price"> от
+                <input type="text" name="price-from" value="0">
+            </label><br>
+            <label class="lb-price"> до
+                <input type="text" name="price-to" value="3000">
+            </label><br>
+            <input type="range"><br>
+            <a class="btn btn-brown" href="#">Показать</a>
+        </div>
+      </section>
+      <section class="search-results">
+          <div class="result-all">
+               <p></p>
+          </div>
+          <div class="result-sort">
+            <ul class="list-sort">Сортировка
+              <li>по цене</li>
+              <li>по типу</li>
+              <li>по рейтингу</li>
+            </ul>
+          </div>
+          <div class="result-asc">
+              <button class="btn-asc" type="button"></button>
+              <button class="btn-asc" type="button"></button>
+          </div>
+      </section>
+      <section class="result-item">
+        <div class="result-img">
+            <img src="http://placehold.it/150x100" alt="Amarta resort &amp; spa" />
+        </div>
+        <div class="result-general">
+            <h2 class="result-name">Amarta resort & spa</h2>
+            <div class="result-info">
+                <p>Гостиница</p>
+                <a class="btn btn-blue" href="#">Подробнее</a>
+            </div>
+            <div class="result-info">
+                <p> от 3500 р.</p>
+                <a class="btn btn-brown" href="#">Забронировать</a>
+            </div>
+        </div>
+        <div class="result-rating">
+            <img src="http://placehold.it/50x20" alt="Stars" />
+            <p>Рейтинг: 8,5</p>
+        </div>
+      </section>
+      <section class="result-item">
+        <div class="result-img">
+            <img src="http://placehold.it/150x100" alt="Desert quail inn" />
+        </div>
+        <div class="result-general">
+            <h2 class="result-name">Desert quail inn</h2>
+            <div class="result-info">
+                <p>Мотель</p>
+                <a class="btn btn-blue" href="#">Подробнее</a>
+            </div>
+            <div class="result-info">
+                <p> от 2000 р.</p>
+                <a class="btn btn-brown" href="#">Забронировать</a>
+            </div>
+        </div>
+        <div class="result-rating">
+            <img src="http://placehold.it/50x20" alt="Stars" />
+            <p>Рейтинг: 8,9</p>
+        </div>
+      </section>
+      <section class="result-item">
+        <div class="result-img">
+            <img src="http://placehold.it/150x100" alt="Villas at poco diablo" />
+        </div>
+        <div class="result-general">
+            <h2 class="result-name">Villas at poco diablo</h2>
+            <div class="result-info">
+                <p>Апартаменты</p>
+                <a class="btn btn-blue" href="#">Подробнее</a>
+            </div>
+            <div class="result-info">
+                <p> от 4000 р.</p>
+                <a class="btn btn-brown" href="#">Забронировать</a>
+            </div>
+        </div>
+        <div class="result-rating">
+            <img src="http://placehold.it/50x20" alt="Stars" />
+            <p>Рейтинг: 8,9</p>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+       <section class="footer-hashtag">
+           <p>#visitsedona</p>
+       </section>
+       <section class="footer-social">
+           <a class="social-btn social-btn-vk" href="#">Твиттер</a>
+           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+           <a class="social-btn social-btn-y" href="#">Ютюб</a>
+       </section>
+       <section class="footer-copyright">
+           <p>Website by <img src="http://placehold.it/150x100" alt="Эмблема"></p>
+       </section>
+    </footer>
+  </body>
+</html>
