@@ -12,11 +12,11 @@
                <li><a href="#">Информация</a></li>
                <li><a href="#">Фото и видео</a></li>
                <li><a href="#">Карта штата</a></li>
-               <li><a href="#">Гостиницы</a></li>
+               <li><a href="catalog.html">Гостиницы</a></li>
            </ul>
          </nav>
-         <div class="index-logo">
-             <a href="#"><img src="img/index-logo.png" width="368" height="204" alt="Седона"></a>
+         <div class="index">
+             <a href="index.html"><img src="img/index-logo.png" width="368" height="204" alt="Седона"></a>
          </div>
        </header>
        <section class="main-img">
@@ -30,8 +30,8 @@
        <section class="features">
          <div class="feature-item feature-blue">
              <h2>Настоящий городок</h2>
+             <span>&ndash;№1&ndash;</span>
              <p>Седона &mdash; не аттракцион для туристов, там течет своя жизнь!</p>
-             <span>№1</span>
          </div>
          <div class="feature-img">
               <img src="http://placehold.it/150x100" width="368" height="204" alt="№1">
@@ -60,25 +60,25 @@
          </div>
          <div class="feature-item f-blue">
              <h2>Там есть мост дьявола</h2>
+             <span>&ndash;№2&ndash;<span>
              <p>Да, по нему можно пройти! Если вы конечно осмелитесь</p>
-             <span>№2<span>
          </div>
        </section>
        <section class="features">
          <div class="feature-item f-white">
              <h2>Небольшая площадь</h2>
+             <span>&ndash;№3&ndash;</span>
              <p>Все достопримечательности находится очень близко!</p>
-             <span>№3</span>
          </div>
          <div class="feature-item f-white">
              <h2>Красивая дорога</h2>
+             <span>&ndash;№4&ndash;</span>
              <p>Ехать в Седону из Лас&#x2010;Вегаса совсем не скучно!</p>
-             <span>№4</span>
          </div>
          <div class="feature-item f-white">
              <h2>Мало туристов</h2>
+             <span>&ndash;№5&ndash;</span>
              <p>Большинство едет в гранд каньон и толпится там!</p>
-             <span>№5</span>
          </div>
        </section>
        <section class="summury-item">
@@ -87,28 +87,26 @@
            <a class="find-btn" href="#">Поиск гостиницы в Седоне</a>
        </section>
        <section class="map">
-           <form class="map-view" action="index.html" method="post" style="display:none;" >
-           </form>
-       </section>
-       <form class="find-hotel" action="index.html" method="post" style="display:none;" >
-          <label class="date-stay"> Дата заезда
-              <input type="date" name="date-from" value="">
-          </label>
-          <label class="date-stay">Дата выезда
-              <input type="date" name="date-to" value="">
-          </label>
-          <label class="count-guests">Взрослые:
-              <button class="btn-move" type="button">-</button>
-              <input type="text" name="count-adult" placeholder="2">
-              <button class="btn-move" type="button">+</button>
-          </label>
-          <label class="count-guests">Дети:
-              <button class="btn-move" type="button">-</button>
-              <input type="text" name="count-children" placeholder="0">
-              <button class="btn-move" type="button">+</button>
+         <form class="find-hotel" action="index.html" method="post" style="display:none;" >
+           <label class="date-stay"> Дата заезда
+               <input type="date" name="date-from" value="">
            </label>
-              <button class="btn-find" type="submit">Найти</button>
+           <label class="date-stay">Дата выезда
+               <input type="date" name="date-to" value="">
+           </label>
+           <label class="count-guests">Взрослые:
+               <button class="btn-move" type="button">-</button>
+               <input type="text" name="count-adult" placeholder="2">
+               <button class="btn-move" type="button">+</button>
+           </label>
+           <label class="count-guests">Дети:
+               <button class="btn-move" type="button">-</button>
+               <input type="text" name="count-children" placeholder="0">
+               <button class="btn-move" type="button">+</button>
+            </label>
+               <button class="btn-find" type="submit">Найти</button>
          </form>
+       </section>
        <footer class="main-footer">
           <div class="footer-hashtag">
               <a class="hashtag-btn" href="#">#visitsedona</a>

@@ -12,15 +12,15 @@
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
-            <li><a href="#">Гостиницы</a></li>
+            <li><a href="catalog.html">Гостиницы</a></li>
           </ul>
         </nav>
-        <div class="index-logo">
-            <a href="#"><img src="img/index-logo.png" width="368" height="204" alt="Седона"></a>
+        <div class="index">
+            <a href="index.html"><img src="img/index-logo.png" width="368" height="204" alt="Седона"></a>
         </div>
       </div>
     </header>
-      <form class="search-options" action="catalog.html" method="post">
+      <form class="search-options" action="#" method="post">
         <div class="option-check">
             <h2>Инфраструктура</h2>
             <label><input type="checkbox" name="infrastructure" value="Бассейн" checked>Бассейн </label>
@@ -42,7 +42,7 @@
                 <input type="text" name="price-to" value="3000">
             </label>
             <input type="range">
-            <a class="btn btn-brown" href="#">Показать</a>
+            <button class="btn-show" type="submit">Показать</button>
         </div>
       </form>
       <section class="search-results">
@@ -58,8 +58,10 @@
             </ul>
           </div>
           <div class="result-asc">
-              <a class="btn btn-asc" href="#"></a>
-              <a class="btn btn-desk" href="#"></a>
+            <ul class="list-asc">
+              <li>по возрастанию</li>
+              <li>по убыванию</li>
+            </ul>
           </div>
       </section>
       <article class="result-item">
@@ -67,7 +69,7 @@
             <img src="http://placehold.it/150x100" alt="Amarta resort &amp; spa" />
         </div>
         <div class="result-general">
-            <h2>Amarta resort &amp; spa</h2>
+            <h1><a href="#">Amarta resort &amp; spa</a></h1>
             <div class="result-info">
                 <span>Гостиница</span>
                 <a class="btn btn-blue" href="#">Подробнее</a>
@@ -89,7 +91,7 @@
             <img src="http://placehold.it/150x100" alt="Desert quail inn" />
         </div>
         <div class="result-general">
-            <h2>Desert quail inn</h2>
+            <h1><a href="#">Desert quail inn</a></h1>
             <div class="result-info">
                 <span>Мотель</span>
                 <a class="btn btn-blue" href="#">Подробнее</a>
@@ -111,7 +113,7 @@
             <img src="http://placehold.it/150x100" alt="Villas at poco diablo" />
         </div>
         <div class="result-general">
-            <h2>Villas at poco diablo</h2>
+            <h1> <a href="#">Villas at poco diablo</a></h1>
             <div class="result-info">
                 <span>Апартаменты</span>
                 <a class="btn btn-blue" href="#">Подробнее</a>
