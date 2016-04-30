@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -29,8 +30,8 @@
            <h1>Седона &mdash; небольшой городок в Аризоне, заслуживающий больше </h1>
            <p>Рассмотри 5 причин, по которым Седона круче, чем гранд каньон</p>
        </section>
-       <section class="features">
-         <div class="feature-item f-blue">
+       <section class="features f-blue">
+         <div class="feature-item">
              <h2>Настоящий городок</h2>
              <span>&ndash;№1&ndash;</span>
              <p>Седона &mdash; не аттракцион для туристов, там течет своя жизнь!</p>
@@ -56,37 +57,37 @@
              <p>Не только китайского, но и местного производства!</p>
          </div>
        </section>
-       <section class="features">
+       <section class="features f-blue">
          <div class="feature-img">
              <img src="img/feature_2.jpg" width="800" height="256"  alt="№2">
          </div>
-         <div class="feature-item f-blue">
+         <div class="feature-item">
              <h2>Там есть мост дьявола</h2>
-             <span>&ndash;№2&ndash;<span>
+             <span>&ndash;№2&ndash;</span>
              <p>Да, по нему можно пройти! Если вы конечно осмелитесь</p>
          </div>
        </section>
-       <section class="features">
-         <div class="feature-item f-gray">
+       <section class="features f-gray">
+         <div class="feature-item">
              <h2>Небольшая площадь</h2>
              <span>&ndash;№3&ndash;</span>
              <p>Все достопримечательности находится очень близко!</p>
          </div>
-         <div class="feature-item f-gray">
+         <div class="feature-item">
              <h2>Красивая дорога</h2>
              <span>&ndash;№4&ndash;</span>
              <p>Ехать в Седону из Лас&#x2010;Вегаса совсем не скучно!</p>
          </div>
-         <div class="feature-item f-gray">
+         <div class="feature-item">
              <h2>Мало туристов</h2>
              <span>&ndash;№5&ndash;</span>
              <p>Большинство едет в гранд каньон и толпится там!</p>
          </div>
        </section>
-       <section class="summury-item">
+       <section class="summary-item">
            <h3>Заинтересовались?</h3>
            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения в Седоне!</p>
-           <a class="find-btn" href="#">Поиск гостиницы в Седоне</a>
+           <a class="btn-find" href="#">Поиск гостиницы в Седоне</a>
        </section>
        <section class="map">
           <form class="find-hotel" action="index.html" method="post"> <!--style="display:none;" > -->
@@ -96,17 +97,15 @@
            <label class="date-stay">Дата выезда
                <input type="date" name="date-to" value="">
            </label>
-           <label class="count-guests">Взрослые:
+           <label class="count-guests" for="id-cnt-adult">Взрослые: </label>
                <button class="btn-move" type="button">-</button>
-               <input type="text" name="count-adult" placeholder="2">
+               <input type="text" name="count-adult" id="id-cnt-adult" placeholder="2">
                <button class="btn-move" type="button">+</button>
-           </label>
-           <label class="count-guests">Дети:
+           <label class="count-guests" for="id-cnt-child">Дети:</label>
                <button class="btn-move" type="button">-</button>
-               <input type="text" name="count-children" placeholder="0">
+               <input type="text" name="count-children" id="id-cnt-child" placeholder="0">
                <button class="btn-move" type="button">+</button>
-            </label>
-               <button class="btn-find" type="submit">Найти</button>
+               <button class="btn-find-result" type="submit">Найти</button>
          </form>
        </section>
        <footer class="main-footer">
@@ -114,12 +113,14 @@
               <a class="hashtag-btn" href="#">#visitsedona</a>
           </div>
           <div class="footer-social">
-              <a class="social-btn social-btn-vk" href="#">Твиттер</a>
-              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-              <a class="social-btn social-btn-y" href="#">Ютюб</a>
+              <a class="social-btn" href="#">Твиттер<span class="icon-twitter"></span></a>
+              <a class="social-btn" href="#">Фейсбук<span class="icon-facebook"></span></a>
+              <a class="social-btn" href="#">Ютюб<span class="icon-youtube"></span></a>
           </div>
           <div class="footer-copyright">
-              <a class="copyright-btn" href="#">Websity by <img src="img/logo.png" width="113" height="39" alt="Эмблема" ></a>
+              <span>Website by </span>
+              <a class="copyright-btn" href="https://htmlacademy.ru/"></a>
+               <!-- <img src="img/logo.png" width="113" height="39" alt="Эмблема" ></a> -->
           </div>
        </footer>
      </div>
