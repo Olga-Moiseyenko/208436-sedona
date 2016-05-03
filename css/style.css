@@ -656,8 +656,8 @@ h1 {
   color: #fefefe;
 }
 
-.option .indicator:disabled {
-  opacity: 0.3px;
+.option input[type="checkbox"]:disabled + .indicator::before{
+  opacity: 0.3;
 }
 
 .option input[type="checkbox"]:not(checked) + .indicator::before {
