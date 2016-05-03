@@ -25,25 +25,33 @@
       <form class="search-options" action="#" method="post">
         <div class="option-check">
             <h2>Инфраструктура</h2>
-            <label><input type="checkbox" name="infrastructure" value="Бассейн" checked>Бассейн</label>
-            <label><input type="checkbox" name="infrastructure" value="Парковка">Парковка</label>
-            <label><input type="checkbox" name="infrastructure" value="Wi-fi">Wi-fi</label>
+            <label class="option"><input type="checkbox" name="infrastructure" value="Бассейн" checked><span class="indicator"></span>Бассейн</label>
+            <label class="option"><input type="checkbox" name="infrastructure" value="Парковка"><span class="indicator"></span>Парковка</label>
+            <label class="option"><input type="checkbox" name="infrastructure" value="Wi-fi"><span class="indicator"></span>Wi-fi</label>
         </div>
         <div class="option-check">
             <h2>Тип жилья</h2>
-            <label><input type="checkbox" name="type-accomod" value="Гостиница" checked>Гостиница</label>
-            <label><input type="checkbox" name="type-accomod" value="Мотель" checked>Мотель</label>
-            <label><input type="checkbox" name="type-accomod" value="Апартаменты" checked>Апартаменты</label>
+            <label class="option"><input type="checkbox" name="type-accomod" value="Гостиница" checked><span class="indicator"></span>Гостиница</label>
+            <label class="option"><input type="checkbox" name="type-accomod" value="Мотель" checked><span class="indicator"></span>Мотель</label>
+            <label class="option"><input type="checkbox" name="type-accomod" value="Апартаменты" checked><span class="indicator"></span>Апартаменты</label>
         </div>
         <div class="option-price">
-            <h2>Стоимость в сутки</h2>
-            <label class="lb-price"> от
-                <input type="text" name="price-from" value="0">
-            </label>
-            <label class="lb-price"> до
-                <input type="text" name="price-to" value="3000">
-            </label>
-            <input type="range">
+            <h2>Стоимость в сутки (P):</h2>
+            <div class="price-controls">
+                <label class="min-lb-price"> от
+                    <input type="text" name="price-from" value="0">
+                </label>
+                <label class="max-lb-price"> до
+                    <input type="text" name="price-to" value="3000">
+                </label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
             <button class="btn-show" type="submit">Показать</button>
         </div>
       </form>
@@ -52,40 +60,40 @@
                <h3>Найдено: 3</h3>
           </div>
           <div class="result-sort">
-            <span>Сортировка</span>
+            <span>Сортировка:</span>
             <ul class="list-sort">
-              <li><a href="#">по цене</a></li>
+              <li><a class="active" href="#">по цене</a></li>
               <li><a href="#">по типу</a></li>
               <li><a href="#">по рейтингу</a></li>
             </ul>
           </div>
           <div class="result-asc">
             <ul class="list-asc">
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
+              <li><a href="#"><span class="icon-up-dir"></span></a></li>
+              <li><a href="#"><span class="icon-down-dir active"></span></a></li>
             </ul>
           </div>
       </section>
       <article class="result-item">
         <div class="result-img">
-            <img src="img/amara_resort_spa.jpg" width="135" height="90" alt="Amarta resort &amp; spa" />
+            <img src="img/amara_resort_spa.jpg" width="135" height="90" alt="Amara resort &amp; spa" />
         </div>
         <div class="result-general">
-            <h1><a href="#">Amarta resort &amp; spa</a></h1>
+            <h1><a href="#">Amara resort &amp; spa</a></h1>
             <div class="book">
               <div class="result-info">
                   <span>Гостиница</span>
-                  <a class="btn btn-blue" href="#">Подробнее</a>
+                  <a class="btn-more" href="#">Подробнее</a>
               </div>
               <div class="result-info">
                   <span> от 3500 р.</span>
-                  <a class="btn btn-brown" href="#">Забронировать</a>
+                  <a class="btn-book" href="#">Забронировать</a>
                 </div>
             </div>
         </div>
         <div class="result-rating">
           <div class="stars">
-            <i></i><i></i><i></i><i></i>
+            <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>
           </div>
             <span>Рейтинг: 8,5</span>
         </div>
@@ -99,17 +107,17 @@
             <div class="book">
               <div class="result-info">
                   <span>Мотель</span>
-                  <a class="btn btn-blue" href="#">Подробнее</a>
+                  <a class="btn-more" href="#">Подробнее</a>
               </div>
               <div class="result-info">
                   <span> от 2000 р.</span>
-                  <a class="btn btn-brown" href="#">Забронировать</a>
+                  <a class="btn-book" href="#">Забронировать</a>
               </div>
             </div>
         </div>
         <div class="result-rating">
           <div class="stars">
-            <i></i><i></i>
+            <i class="icon-star"></i><i class="icon-star"></i>
           </div>
             <span>Рейтинг: 8,9</span>
         </div>
@@ -123,34 +131,35 @@
             <div class="book">
               <div class="result-info">
                   <span>Апартаменты</span>
-                  <a class="btn btn-blue" href="#">Подробнее</a>
+                  <a class="btn-more" href="#">Подробнее</a>
               </div>
               <div class="result-info">
                   <span> от 4000 р.</span>
-                  <a class="btn btn-brown" href="#">Забронировать</a>
+                  <a class="btn-book" href="#">Забронировать</a>
               </div>
             </div>
         </div>
         <div class="result-rating">
           <div class="stars">
-            <i></i><i></i><i></i>
+            <i class="icon-star"></i><i class="icon-star"></i><iclass="icon-star"></i>
           </div>
             <span>Рейтинг: 8,9</span>
         </div>
       </article>
-    <footer class="main-footer">
-       <div class="footer-hashtag">
-           <a class="hashtag-btn" href="#">#visitsedona</a>
-       </div>
-       <div class="footer-social">
-           <a class="social-btn social-btn-vk" href="#">Твиттер</a>
-           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-           <a class="social-btn social-btn-y" href="#">Ютюб</a>
-       </div>
-       <div class="footer-copyright">
-           <a class="copyright-btn" href="#">Websity by <img src="img/logo.png" width="113" height="39" alt="Эмблема" ></a>
-       </div>
-    </footer>
+      <footer class="main-footer">
+         <div class="footer-hashtag">
+             <a class="hashtag-btn" href="#">#visitsedona</a>
+         </div>
+         <div class="footer-social">
+             <a class="social-btn" href="#">Твиттер<span class="icon-twitter"></span></a>
+             <a class="social-btn" href="#">Фейсбук<span class="icon-facebook"></span></a>
+             <a class="social-btn" href="#">Ютюб<span class="icon-youtube"></span></a>
+         </div>
+         <div class="footer-copyright">
+             <span>Website by </span>
+             <a class="copyright-btn" href="https://htmlacademy.ru/"></a>
+         </div>
+      </footer>
     </div>
   </body>
 </html>

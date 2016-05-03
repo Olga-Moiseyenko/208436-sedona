@@ -27,8 +27,8 @@
            <img class="img-band" src="img/band.png" width="1200" height="57" alt="Нижняя полоса">
        </section>
        <section class="feature-head">
-           <h1>Седона &mdash; небольшой городок в Аризоне, заслуживающий больше </h1>
-           <p>Рассмотри 5 причин, по которым Седона круче, чем гранд каньон</p>
+           <h1>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего</h1>
+           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
        </section>
        <section class="features f-blue">
          <div class="feature-item">
@@ -91,20 +91,20 @@
        </section>
        <section class="map">
           <form class="find-hotel" action="index.html" method="post"> <!--style="display:none;" > -->
-           <label class="date-stay"> Дата заезда
-               <input type="date" name="date-from" value="">
+           <label class="date-stay">
+               <input  type="text" name="date-from" value="24 АПРЕЛЯ 2016"><a href="#"><i class="icon-calendar"></i></a>
            </label>
-           <label class="date-stay">Дата выезда
-               <input type="date" name="date-to" value="">
+           <label class="date-stay">
+               <input type="text" name="date-to" value="4 ИЮЛЯ 2016"><a href="#"><i class="icon-calendar"></i></a>
            </label>
-           <label class="count-guests" for="id-cnt-adult">Взрослые: </label>
-               <button class="btn-move" type="button">-</button>
-               <input type="text" name="count-adult" id="id-cnt-adult" placeholder="2">
-               <button class="btn-move" type="button">+</button>
-           <label class="count-guests" for="id-cnt-child">Дети:</label>
-               <button class="btn-move" type="button">-</button>
-               <input type="text" name="count-children" id="id-cnt-child" placeholder="0">
-               <button class="btn-move" type="button">+</button>
+           <label class="count-guests" for="id-cnt-adult">Взрослые:</label>
+               <button class="btn-move" type="button">-<span class="icon-minus"></span></button>
+                <input class="small-input" type="text" name="count-adult" id="id-cnt-adult" placeholder="2">
+               <button class="btn-move" type="button">+<span class="icon-plus"></span></button>
+           <label class="count-child" for="id-cnt-child">Дети:</label>
+               <button class="btn-move" type="button">-<span class="icon-minus"></span></button>
+               <input class="small-input" type="text" name="count-children" id="id-cnt-child" placeholder="0">
+               <button class="btn-move" type="button">+<span class="icon-plus"></span></button>
                <button class="btn-find-result" type="submit">Найти</button>
          </form>
        </section>
@@ -120,7 +120,6 @@
           <div class="footer-copyright">
               <span>Website by </span>
               <a class="copyright-btn" href="https://htmlacademy.ru/"></a>
-               <!-- <img src="img/logo.png" width="113" height="39" alt="Эмблема" ></a> -->
           </div>
        </footer>
      </div>
