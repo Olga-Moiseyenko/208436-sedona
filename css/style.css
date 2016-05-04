@@ -332,6 +332,11 @@ h1 {
   background-position: -40px -153px;
   width: 1200px;
   height: 475px;
+  position: relative;
+}
+
+iframe {
+  position: absolute;;
 }
 
 .find-hotel {
@@ -342,8 +347,8 @@ h1 {
   padding: 60px 56px  56px 56px;;
   box-sizing: border-box;
   background-color: white;
-  box-sizing: border-box;
   position: relative;
+  top: 0px;
 }
 
 .find-hotel,
@@ -366,12 +371,14 @@ h1 {
   background-color: #f2f2f2;
   margin-bottom: 35px;
   border-width: 0px;
-  padding: 3px 0px 3px 12px;
+  padding: 2px 0px 0px 11px;
   box-sizing: border-box;
+  border: 2px solid #ffffff;
 }
 
 .date-stay input:hover {
   background-color: #ebebeb;
+  border: 2px solid #ffffff;
 }
 
 .date-stay input:focus {
@@ -446,18 +453,19 @@ h1 {
   padding-bottom: 5px;
   display: block;
   box-sizing: border-box;
+  border: 2px solid #ffffff, 2px solid #f2f2f2;
 }
 
 .count-guests {
   display: block;
   width: 113px;
-  padding: 3px 0px 3px;
+  padding: 2px 0px 2px;
 }
 
 .count-child {
   display: block;
   width: 68px;
-  padding: 3px 0px 3px 55px;;
+  padding: 2px 0px 2px 55px;;
 }
 
 .btn-move span{
@@ -475,6 +483,7 @@ h1 {
 
 .small-input:hover {
   background-color: #ebebeb;
+  border: 2px solid #ffffff, 2px solid #f2f2f2;
 }
 
 .small-input:focus {
@@ -485,7 +494,7 @@ h1 {
 .btn-find-result {
   width: 458px;
   padding: 15px 0px 15px 0px;
-  color: white;
+  color: #ffffff;
   background-color: #81b3d2;
   border: none;
   outline: none;
@@ -498,7 +507,7 @@ h1 {
 }
 
 .btn-find-result:active {
-  background-color:#5496bd;
+  background-color: #5496bd;
   opacity: 0.3;
 }
 
@@ -524,9 +533,9 @@ h1 {
   vertical-align: center;
   background-color: #81b3d2;
   font-size: 0px;
-  width: 45px;
+  width: 46px;
   text-align: center;
-  padding: 11px 0px 11px 0px;
+  padding: 14px 0px 8px 0px;
   margin: 1px;
 }
 
@@ -571,11 +580,11 @@ h1 {
 }
 
 .copyright-btn:hover {
-  background-position: -465px -10px;
+  background-position: -465px -6px;
 }
 
 .copyright-btn:active {
-  background-position: -332px -10px;
+  background-position: -332px -6px;
 }
 
 .search-options {
@@ -850,6 +859,7 @@ h1 {
 
 .result-sort a:active{
   color: #000000;
+  border-bottom: none;
 }
 
 .result-sort .active,
@@ -1044,7 +1054,7 @@ h1 {
 .result-rating span {
   position: absolute;
   display: block;
-  padding: 0px 9px 0px 9px;
+  padding: 3px 9px 3px 9px;
   bottom: 8px;
   right: 3px;
   background-color: #f2f2f2;
