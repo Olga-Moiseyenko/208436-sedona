@@ -143,7 +143,7 @@ a{
    text-align: center;
    list-style: none;
    box-sizing: border-box;
-   padding: 15px 0px 15px;
+   padding: 14px 8px 15px 7px;
 }
 
 .main-navigator a:hover {
@@ -262,13 +262,14 @@ h1 {
   margin: 0px;
  display: block;
  width:151px;
- padding: 0px 125px 22px 124px;
+ padding: 0px 125px 24px 124px;
 }
 
 .feature-item p {
   margin: 0px;
  display: block;
- padding: 22px 50px 0px 50px;
+ text-align: center;
+ padding: 22px 1px 0px 3px;
 }
 
 .f-blue .feature-item{
@@ -277,7 +278,7 @@ h1 {
 }
 .f-gray .feature-item{
   background-color: #eeeeee;
-  padding: 49px 0px 50px;
+  padding: 45px 0px 50px;
 }
 
 .f-blue h2{
@@ -302,14 +303,15 @@ h1 {
   margin: 0px;
   display: block;
   line-height: 24px;
-  padding: 0px 50px 45px 50px;
+  text-align: center;
+  padding: 0px 0px 45px 3px;
 }
 
 .btn-find{
   margin-left: -10px;
   display:block;
   width: 570px;
-  padding: 30px 0px 30px 0px;
+  padding: 31px 0px 30px 0px;
   color: white;
   background-color: #766357;
 }
@@ -327,7 +329,7 @@ h1 {
 
 .map {
   background: #cbdda9 url("../img/map.png") no-repeat;
-  background-position: -40px -155px;
+  background-position: -40px -153px;
   width: 1200px;
   height: 475px;
 }
@@ -337,12 +339,11 @@ h1 {
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
-  padding: 60px 56px  60px 56px;;
+  padding: 60px 56px  56px 56px;;
   box-sizing: border-box;
   background-color: white;
   box-sizing: border-box;
   position: relative;
-
 }
 
 .find-hotel,
@@ -382,7 +383,7 @@ h1 {
   content: "дата заезда:";
   width: 113px;
   text-align: left;
-  padding: 3px 0px 3px;
+  padding: 3px 0px 3px 1px;
 }
 
 .date-stay:nth-child(2)::before {
@@ -402,12 +403,12 @@ h1 {
 
  .date-stay:nth-child(1) i{
   left:480px;
-  top: 61px;
+  top: 63px;
 }
 
 .date-stay:nth-child(2) i{
   left:480px;
-  top: 127px;
+  top: 129px;
 }
 
 .date-stay i:hover{
@@ -426,14 +427,23 @@ h1 {
  color: #81b3d2;
 }
 
-.btn-move,
-.small-input
-{
+.btn-move {
   width: 37px;
   background-color: #f2f2f2;
   border-width: 0px;
   text-align: center;
-  padding-top: 2px;
+  padding-top: 6px;
+  display: block;
+  box-sizing: border-box;
+  font-size: 0;
+}
+
+.small-input {
+  width: 37px;
+  background-color: #f2f2f2;
+  border-width: 0px;
+  text-align: center;
+  padding-bottom: 5px;
   display: block;
   box-sizing: border-box;
 }
@@ -449,9 +459,7 @@ h1 {
   width: 68px;
   padding: 3px 0px 3px 55px;;
 }
-.btn-move {
-  font-size: 0;
-}
+
 .btn-move span{
   font-size: 14px;
   color: #a9a9a9;
@@ -482,7 +490,7 @@ h1 {
   border: none;
   outline: none;
   cursor: pointer;
-  margin-top: 57px;
+  margin-top: 53px;
 }
 
 .btn-find-result:hover {
@@ -504,6 +512,7 @@ h1 {
 .footer-social{
   width: 400px;
   text-align: center;
+  position: relative;
 }
 
 .footer-hashtag{
@@ -517,7 +526,8 @@ h1 {
   font-size: 0px;
   width: 45px;
   text-align: center;
-  padding: 11px 0px 11px;
+  padding: 11px 0px 11px 0px;
+  margin: 1px;
 }
 
 .social-btn span {
@@ -546,7 +556,7 @@ h1 {
 
 .footer-copyright span {
   display: block;
-  padding:10px 0px 0px 102px;
+  padding:14px 0px 0px 102px;
 }
 
 .copyright-btn {
@@ -554,7 +564,8 @@ h1 {
   background: #ffffff url("../img/sprite.png") no-repeat center;
   width: 113px;
   height: 39px;
-  background-position: -199px -10px;
+  background-position: -199px -6px;
+  padding-bottom: 20px;
   top: 3px;
   left: 185px;
 }
@@ -569,11 +580,11 @@ h1 {
 
 .search-options {
   display: flex;
-  margin: 0 auto;
-  height: 215px;
+  margin: 0px auto;
+  /*height: 215px;*/
   background: #e4f1f8 url("../img/filter_bg.png") no-repeat;
   background-position: 0px -55px;
-  padding: 27px 0px 31px;
+  padding: 27px 0px 6px;
   box-sizing: border-box;
   color: #ffffff;
 }
@@ -585,11 +596,11 @@ h1 {
   box-sizing: border-box;
 }
 .option-check:nth-child(1){
-  padding-left: 73px;
+  padding-left: 72px;
 }
 
 .option-check:nth-child(2){
-  padding-left: 27px;
+  padding-left: 28px;
 }
 .option-check label {
   margin-bottom: 25px;
@@ -610,7 +621,7 @@ h1 {
 
 .option {
   position: relative;
-  padding-left: 30px;
+  padding-left: 27px;
   cursor: pointer;
   color: #ffffff;
 }
@@ -671,14 +682,14 @@ h1 {
 
 .option-price {
   margin: 0px;
-  padding-left: 210px;
+  padding-left: 209px;
   width: 530px;
   box-sizing: border-box;
 }
 
 .option-price h2 {
   margin: 0px;
-  margin-left: -10px;
+  margin-left: -8px;
   margin-bottom: 9px;
   font-weight: 600;
   font-size: 16px;
@@ -687,7 +698,7 @@ h1 {
 }
 .price-controls {
   position: relative;
-  height: 36px;
+  height: 34px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
@@ -716,7 +727,7 @@ h1 {
 
 .price-controls .min-lb-price,
 .price-controls .max-lb-price {
-  width: 90px;
+  width: 82px;
   padding-left: 65px;
 }
 .price-controls input {
@@ -731,30 +742,26 @@ h1 {
 
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
 .range-controls .scale {
+  padding-top: -1px;
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
 .range-toggle {
   position: absolute;
-  top: -9px;
-
+  top: -10px;
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -777,7 +784,7 @@ h1 {
 .btn-show {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding: 6px 32px 6px 35px;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -798,7 +805,7 @@ h1 {
   display: flex;
   width: 1056px;
   margin: 0px;
-  padding: 22px 72px 10px 72px;
+  padding: 18px 72px 14px 72px;
   align-items: center;
   border-bottom: 1px solid #cccccc;
 }
@@ -897,9 +904,14 @@ h1 {
   display: flex;
   width: 1056px;
   margin: 0px auto;
-  padding: 28px 72px 27px 72px;
+  padding: 27px 72px 23px 72px;
   justify-content: flex-end;
   border-bottom: 1px solid #cccccc;
+}
+
+
+.result-img {
+  margin-top: 4px;
 }
 
 .result-general {
@@ -909,21 +921,41 @@ h1 {
 
 .result-general h1 {
   margin: 0px;
-  padding: 0px;
+  display: block;
 }
+.name a {
+  display: block;
+  font-size: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: black;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.name a:hover {
+  color: #81b3d2;
+}
+
+.name a:active {
+  color: #cacaca;
+}
+
 .book {
   width: 230px;
   display: flex;
 }
 .result-info{
-  width: 115px;
+  margin: 0px;
+  width: 114px;
   text-align: left;
-  padding-top: 3px;
+  padding-top: 7px;
+  margin-right: 7px;
 }
 
 .result-info span{
   display: block;
-  padding-bottom: 17px;
+  padding-bottom: 14px;
 }
 .btn-more,
 .btn-book {
@@ -974,14 +1006,46 @@ h1 {
     text-align: right;
     position: relative;
   }
+
+.stars i:nth-child(1) {
+  position: absolute;
+  right: -5px;
+  top: 2px;
+}
+.stars i:nth-child(2) {
+  position: absolute;
+  right: 19px;
+  top: 2px;
+}
+.stars i:nth-child(3) {
+  position: absolute;
+  right: 43px;
+  top: 2px;
+}
+
+.stars i:nth-child(4) {
+  position: absolute;
+  right: 67px;
+  top: 2px;
+}
+
+.stars i:nth-child(5) {
+  position: absolute;
+  right: 91px;
+  top: 2px;
+}
 .stars i {
   color: #81b3d2;
   line-height:  21px;
   font-size: 19px;
+
 }
 
 .result-rating span {
   position: absolute;
-  bottom: 5px;
-  right: 12px;
+  display: block;
+  padding: 0px 9px 0px 9px;
+  bottom: 8px;
+  right: 3px;
+  background-color: #f2f2f2;
 }
