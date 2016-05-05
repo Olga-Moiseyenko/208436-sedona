@@ -331,7 +331,7 @@ h1 {
   background: #cbdda9 url("../img/map.png") no-repeat;
   background-position: -40px -153px;
   width: 1200px;
-  height: 475px;
+  height: 596px;
   position: relative;
 }
 
@@ -515,6 +515,9 @@ iframe {
   display: flex;
   width: 1200px;
   padding: 35px 0px 35px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  margin-top:-121px;
 }
 
 .footer-hashtag,
