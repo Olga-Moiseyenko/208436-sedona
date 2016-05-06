@@ -223,7 +223,9 @@ h1 {
 }
 .features{
   display: flex;
-  height: 256px;
+}
+.feature-img {
+    line-height: 0;
 }
 
 .feature-img img {
@@ -255,6 +257,7 @@ h1 {
 }
 
 .feature-item {
+  margin: 0px;
   padding: 55px 0px 50px;
 }
 
@@ -288,7 +291,7 @@ h1 {
   width: 550px;
   text-align: center;
   margin: 0 auto;
-  padding-top: 55px;
+  padding-top: 63px;
 }
 
 .summary-item h3{
@@ -304,7 +307,7 @@ h1 {
   display: block;
   line-height: 24px;
   text-align: center;
-  padding: 0px 0px 45px 3px;
+  padding: 0px 0px 48px 3px;
 }
 
 .btn-find{
@@ -344,11 +347,13 @@ iframe {
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
-  padding: 60px 56px  56px 56px;;
+  padding: 58px 56px  56px 56px;;
   box-sizing: border-box;
   background-color: white;
-  position: relative;
+  position: absolute;
   top: 0px;
+  left: 315px;
+  z-index: 1;
 }
 
 .find-hotel,
@@ -362,6 +367,67 @@ iframe {
   text-transform: uppercase;
 }
 
+
+/*@-webkit-keyframes "zoom-in" {
+    from {
+        -webkit-transform: translate(10px, 100px) rotate(0) scale(0);
+        -ms-transform: translate(10px, 100px) rotate(0) scale(0);
+        transform: translate(10px, 100px) rotate(0) scale(0);
+    }
+
+    to {
+        -webkit-transform: translate(0, 0) rotate(360deg) scale(1);
+        -ms-transform: translate(0, 0) rotate(360deg) scale(1);
+        transform: translate(0, 0) rotate(360deg) scale(1);
+    }
+}*/
+
+@keyframes "zoom-in" {
+    from {
+        transform: translate(10px, 100px) rotate(0) scale(0);
+    }
+
+    to {
+        transform: translate(0, 0) rotate(360deg) scale(1);
+    }
+}
+
+/*@-webkit-keyframes "zoom-out" {
+    from {
+        -webkit-transform: translate(0, 0) scale(1) rotate(0);
+        -ms-transform: translate(0, 0) scale(1) rotate(0);
+        transform: translate(0, 0) scale(1) rotate(0);
+    }
+
+    to {
+        -webkit-transform: translate(10px, 100px) scale(0) rotate(-360deg);
+        -ms-transform: translate(10px, 100px) scale(0) rotate(-360deg);
+        transform: translate(10px, 100px) scale(0) rotate(-360deg);
+    }
+}*/
+
+@keyframes "zoom-out" {
+    from {
+        transform: translate(0, 0) scale(1) rotate(0);
+    }
+
+    to {
+        transform: translate(10px, 100px) scale(0) rotate(-360deg);
+    }
+}
+
+.search-form-visible {
+    display: block;
+    animation: zoom-in 0.9s ease-in-out;
+    background-color: red;
+}
+
+.search-form-invisible {
+    display: block;
+    animation: zoom-out 0.9s ease-in-out forwards;
+}
+
+
 .date-stay {
   display: flex;
 }
@@ -369,9 +435,9 @@ iframe {
 .date-stay input {
   width: 345px;
   background-color: #f2f2f2;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   border-width: 0px;
-  padding: 2px 0px 0px 11px;
+  padding: 3px 0px 2px 11px;
   box-sizing: border-box;
   border: 2px solid #ffffff;
 }
@@ -390,14 +456,14 @@ iframe {
   content: "дата заезда:";
   width: 113px;
   text-align: left;
-  padding: 3px 0px 3px 1px;
+  padding: 4px 0px 3px 1px;
 }
 
 .date-stay:nth-child(2)::before {
   content: "дата выезда:";
   width: 113px;
   text-align: left;
-  padding: 3px 0px 3px;
+  padding: 4px 0px 3px;
 }
 
 .date-stay i{
@@ -450,7 +516,7 @@ iframe {
   background-color: #f2f2f2;
   border-width: 0px;
   text-align: center;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
   display: block;
   box-sizing: border-box;
   border: 2px solid #ffffff, 2px solid #f2f2f2;
@@ -459,13 +525,13 @@ iframe {
 .count-guests {
   display: block;
   width: 113px;
-  padding: 2px 0px 2px;
+  padding: 5px 0px 2px;
 }
 
 .count-child {
   display: block;
   width: 68px;
-  padding: 2px 0px 2px 55px;;
+  padding: 5px 0px 2px 55px;;
 }
 
 .btn-move span{
@@ -499,7 +565,7 @@ iframe {
   border: none;
   outline: none;
   cursor: pointer;
-  margin-top: 53px;
+  margin-top: 54px;
 }
 
 .btn-find-result:hover {
@@ -508,7 +574,7 @@ iframe {
 
 .btn-find-result:active {
   background-color: #5496bd;
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .main-footer {
@@ -593,7 +659,6 @@ iframe {
 .search-options {
   display: flex;
   margin: 0px auto;
-  /*height: 215px;*/
   background: #e4f1f8 url("../img/filter_bg.png") no-repeat;
   background-position: 0px -55px;
   padding: 27px 0px 6px;
@@ -937,7 +1002,6 @@ iframe {
   display: block;
 }
 .name a {
-  display: block;
   font-size: 21px;
   font-family: "PT Sans", "Arial", sans-serif;
   color: black;
