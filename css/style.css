@@ -521,6 +521,7 @@ iframe {
   display: block;
   box-sizing: border-box;
   font-size: 0;
+  outline: none;
 }
 
 .small-input {
@@ -531,7 +532,7 @@ iframe {
   padding-bottom: 3px;
   display: block;
   box-sizing: border-box;
-  border: 2px solid #ffffff, 2px solid #f2f2f2;
+  border: 2px solid #f2f2f2;
 }
 
 .lb-cnt-adult {
@@ -570,9 +571,13 @@ iframe {
   color: #81b3d2;
 }
 
+input::-ms-clear {
+   display: none;
+}
+
 .small-input:hover {
   background-color: #ebebeb;
-  border: 2px solid #ffffff, 2px solid #f2f2f2;
+  border: 2px solid #ebebeb;
 }
 
 .small-input:focus {
