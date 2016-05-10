@@ -475,6 +475,7 @@ iframe {
 .date-stay input:focus {
   background-color: #ffffff;
   border: 2px solid #ebebeb;
+  outline: none;
 }
 
 .lb-date-stay {
@@ -577,6 +578,7 @@ iframe {
 .small-input:focus {
   background-color: #ffffff;
   border: 2px solid #ebebeb;
+  outline: none;
 }
 
 .btn-find-result {
@@ -635,14 +637,13 @@ iframe {
   background-color: #81b3d2;
   font-size: 0px;
   width: 46px;
-  text-align: center;
   padding: 14px 0px 8px 0px;
   margin: 1px;
 }
 
 .social-btn span {
-  font-size: 19px;
   line-height: 20px;
+  font-size: 19px;
   color: #ffffff;
 }
 
@@ -652,7 +653,10 @@ iframe {
 
 .social-btn:active {
   background-color: #5496bd;
-  opacity: 0.3;
+}
+
+.social-btn:active span{
+  color: rgba(255,255,255, 0.3);
 }
 
 .hashtag-btn {
@@ -1144,7 +1148,7 @@ iframe {
 
 .btn-more:active {
   background-color: #5496bd;
-  opacity: 0.3;
+  color: rgba(255,255,255, 0.3);
 }
 
 .btn-book {
@@ -1158,14 +1162,14 @@ iframe {
 
 .btn-book:active {
   background-color: #503e33;
-  opacity: 0.3;
+  color: rgba(255,255,255, 0.3);
 }
 
 .result-rating {
     width: 241px;
     position: relative;
     text-align: right;
-    position: relative;
+    color: #333333;
   }
 
 .stars i:nth-child(1) {
@@ -1195,6 +1199,7 @@ iframe {
   right: 91px;
   top: 2px;
 }
+
 .stars i {
   color: #81b3d2;
   line-height:  21px;
@@ -1208,5 +1213,6 @@ iframe {
   padding: 3px 9px 3px 9px;
   bottom: 8px;
   right: 3px;
+  color: #666666;
   background-color: #f2f2f2;
 }
