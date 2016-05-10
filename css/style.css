@@ -120,6 +120,7 @@ h3 {
 a {
   text-decoration: none;
 }
+
 .container {
   width: 1200px;
   margin: 0px auto;
@@ -147,6 +148,7 @@ a {
   margin: 0px;
   padding: 0px;
 }
+
 .main-navigator li {
   width: 240px;
   text-align: center;
@@ -167,6 +169,7 @@ a {
 .main-navigator .active {
   color: #766357;
 }
+
 .main-navigator .active:hover {
   color: #604e43;
 }
@@ -232,12 +235,14 @@ h1 {
   margin: 0px;
   padding-top: 33px;
 }
+
 .features {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
+
 .feature-img {
   line-height: 0;
 }
@@ -296,6 +301,7 @@ h1 {
   background-color: #81b3d2;
   color: white;
 }
+
 .f-gray .feature-item {
   background-color: #eeeeee;
   padding: 45px 0px 50px;
@@ -304,6 +310,7 @@ h1 {
 .f-blue h2 {
   color: white;
 }
+
 .summary-item {
   width: 550px;
   text-align: center;
@@ -348,7 +355,7 @@ h1 {
 }
 
 .map {
-  background: #cbdda9 url("../img/map.png") no-repeat;
+  background: #cbdda9 url("../img/map.jpg") no-repeat;
   background-position: -40px -153px;
   width: 1200px;
   height: 596px;
@@ -385,7 +392,6 @@ iframe {
   text-transform: uppercase;
 }
 
-
 @-webkit-keyframes zoom-in {
     from {
         -webkit-transform: translate(10px, 100px) rotate(0) scale(0);
@@ -397,7 +403,6 @@ iframe {
                 transform: translate(0, 0) rotate(360deg) scale(1);
     }
 }
-
 
 @keyframes zoom-in {
     from {
@@ -411,7 +416,6 @@ iframe {
     }
 }
 
-
 @-webkit-keyframes zoom-out {
     from {
         -webkit-transform: translate(0, 0) scale(1) rotate(0);
@@ -422,7 +426,6 @@ iframe {
                 transform: translate(10px, 100px) scale(0) rotate(-360deg);
     }
 }
-
 
 @keyframes zoom-out {
     from {
@@ -484,7 +487,6 @@ iframe {
   text-align: left;
   padding: 6px 0px 3px 1px;
 }
-
 
 .date-stay i {
  display: block;
@@ -624,7 +626,6 @@ input::-ms-clear {
   margin-top:-121px;
 }
 
-
 .footer-hashtag,
 .footer-social {
   width: 400px;
@@ -703,7 +704,7 @@ input::-ms-clear {
   display: -ms-flexbox;
   display: flex;
   margin: 0px auto;
-  background: #e4f1f8 url("../img/filter_bg.png") no-repeat;
+  background: #e4f1f8 url("../img/filter_bg.jpg") no-repeat;
   background-position: 0px -55px;
   padding: 27px 0px 6px;
   box-sizing: border-box;
@@ -723,6 +724,7 @@ input::-ms-clear {
           flex-direction: column;
   box-sizing: border-box;
 }
+
 .option-check:nth-child(1) {
   padding-left: 72px;
 }
@@ -730,6 +732,7 @@ input::-ms-clear {
 .option-check:nth-child(2) {
   padding-left: 28px;
 }
+
 .option-check label {
   margin-bottom: 25px;
 }
@@ -783,6 +786,7 @@ input::-ms-clear {
   top: 5px;
   left: 1px;
 }
+
 .option input[type="checkbox"]:checked + .indicator::before {
   font-family: "symbols-sedona";
   content: "\2611";
@@ -807,7 +811,6 @@ input::-ms-clear {
   left: 1px;
 }
 
-
 .option-price {
   margin: 0px;
   padding-left: 209px;
@@ -824,6 +827,7 @@ input::-ms-clear {
   line-height: 21px;
   color: #ffffff;
 }
+
 .price-controls {
   position: relative;
   height: 34px;
@@ -859,6 +863,7 @@ input::-ms-clear {
   width: 82px;
   padding-left: 65px;
 }
+
 .price-controls input {
   width: 50px;
   margin: 0;
@@ -944,6 +949,7 @@ input::-ms-clear {
           align-items: center;
   border-bottom: 1px solid #cccccc;
 }
+
 .result-all {
   width:165px;
   text-align: left;
@@ -971,6 +977,7 @@ input::-ms-clear {
   font-size: 12px;
   line-height: 18px;
 }
+
 .result-sort ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1037,6 +1044,7 @@ input::-ms-clear {
   list-style-type: none;
   width: 20px;
 }
+
 .result-asc span {
   font-size: 23px;
   line-height: 20px;
@@ -1091,6 +1099,7 @@ input::-ms-clear {
   margin: 0px;
   display: block;
 }
+
 .name a {
   font-size: 21px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1115,6 +1124,7 @@ input::-ms-clear {
   display: -ms-flexbox;
   display: flex;
 }
+
 .result-info {
   margin: 0px;
   width: 114px;
@@ -1127,6 +1137,7 @@ input::-ms-clear {
   display: block;
   padding-bottom: 14px;
 }
+
 .btn-more,
 .btn-book {
   display: block;
@@ -1171,22 +1182,24 @@ input::-ms-clear {
 }
 
 .result-rating {
-    width: 241px;
-    position: relative;
-    text-align: right;
-    color: #333333;
-  }
+  width: 241px;
+  position: relative;
+  text-align: right;
+  color: #333333;
+}
 
 .stars i:nth-child(1) {
   position: absolute;
   right: -5px;
   top: 2px;
 }
+
 .stars i:nth-child(2) {
   position: absolute;
   right: 19px;
   top: 2px;
 }
+
 .stars i:nth-child(3) {
   position: absolute;
   right: 43px;
@@ -1209,7 +1222,6 @@ input::-ms-clear {
   color: #81b3d2;
   line-height:  21px;
   font-size: 19px;
-
 }
 
 .result-rating span {
